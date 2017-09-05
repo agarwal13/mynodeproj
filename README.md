@@ -29,67 +29,75 @@
 ## ClientError ⇐ <code>ExtendableError</code>
 Class representing a ClientError
 
-**Kind**: global class
-**Extends**: <code>ExtendableError</code>
+**Kind**: global class  
+**Extends**: <code>ExtendableError</code>  
 
 * [ClientError](#ClientError) ⇐ <code>ExtendableError</code>
-    * [new ClientError(errCode, extra)](#new_ClientError_new)
+    * [new ClientError(errCode, [extra])](#new_ClientError_new)
     * [.getErrorForClient()](#ClientError+getErrorForClient) ⇒ <code>Object</code>
 
 <a name="new_ClientError_new"></a>
 
-### new ClientError(errCode, extra)
+### new ClientError(errCode, [extra])
 Creates a ClientError object
 
 
 | Param | Type | Description |
 | --- | --- | --- |
 | errCode | [<code>ClientErrorCodes</code>](#ClientErrorCodes) | the client error code |
-| extra | <code>string</code> | the reason related information |
+| [extra] | <code>string</code> | the error reason related information |
 
+**Example** *(Example usage of ClientError)*  
+```js
+let notFoundError = new ClientError(ClientErrorCodes.NOT_FOUND)
+```
 <a name="ClientError+getErrorForClient"></a>
 
 ### clientError.getErrorForClient() ⇒ <code>Object</code>
 ClientError#getErrorForClient
 Get the error info to be passed to client
 
-**Kind**: instance method of [<code>ClientError</code>](#ClientError)
-**Returns**: <code>Object</code> - the error info in json format
+**Kind**: instance method of [<code>ClientError</code>](#ClientError)  
+**Returns**: <code>Object</code> - the error info in json format  
 <a name="ClientError"></a>
 
 ## ClientError
-**Kind**: global class
+**Kind**: global class  
 
 * [ClientError](#ClientError)
-    * [new ClientError(errCode, extra)](#new_ClientError_new)
+    * [new ClientError(errCode, [extra])](#new_ClientError_new)
     * [.getErrorForClient()](#ClientError+getErrorForClient) ⇒ <code>Object</code>
 
 <a name="new_ClientError_new"></a>
 
-### new ClientError(errCode, extra)
+### new ClientError(errCode, [extra])
 Creates a ClientError object
 
 
 | Param | Type | Description |
 | --- | --- | --- |
 | errCode | [<code>ClientErrorCodes</code>](#ClientErrorCodes) | the client error code |
-| extra | <code>string</code> | the reason related information |
+| [extra] | <code>string</code> | the error reason related information |
 
+**Example** *(Example usage of ClientError)*  
+```js
+let notFoundError = new ClientError(ClientErrorCodes.NOT_FOUND)
+```
 <a name="ClientError+getErrorForClient"></a>
 
 ### clientError.getErrorForClient() ⇒ <code>Object</code>
 ClientError#getErrorForClient
 Get the error info to be passed to client
 
-**Kind**: instance method of [<code>ClientError</code>](#ClientError)
-**Returns**: <code>Object</code> - the error info in json format
+**Kind**: instance method of [<code>ClientError</code>](#ClientError)  
+**Returns**: <code>Object</code> - the error info in json format  
 <a name="ServerError"></a>
 
 ## ServerError ⇐ <code>ExtendableError</code>
 Class representing a ServerError
 
-**Kind**: global class
-**Extends**: <code>ExtendableError</code>
+**Kind**: global class  
+**Extends**: <code>ExtendableError</code>  
 
 * [ServerError](#ServerError) ⇐ <code>ExtendableError</code>
     * [new ServerError(errCode, extra)](#new_ServerError_new)
@@ -111,12 +119,12 @@ Creates a ServerError object
 ### serverError.getErrorForClient() ⇒ <code>Object</code>
 Get the error info to be passed to client
 
-**Kind**: instance method of [<code>ServerError</code>](#ServerError)
-**Returns**: <code>Object</code> - the error info in json format
+**Kind**: instance method of [<code>ServerError</code>](#ServerError)  
+**Returns**: <code>Object</code> - the error info in json format  
 <a name="ServerError"></a>
 
 ## ServerError
-**Kind**: global class
+**Kind**: global class  
 
 * [ServerError](#ServerError)
     * [new ServerError(errCode, extra)](#new_ServerError_new)
@@ -138,17 +146,17 @@ Creates a ServerError object
 ### serverError.getErrorForClient() ⇒ <code>Object</code>
 Get the error info to be passed to client
 
-**Kind**: instance method of [<code>ServerError</code>](#ServerError)
-**Returns**: <code>Object</code> - the error info in json format
+**Kind**: instance method of [<code>ServerError</code>](#ServerError)  
+**Returns**: <code>Object</code> - the error info in json format  
 <a name="ClientErrorCodes"></a>
 
 ## ClientErrorCodes
 The ClientErrorCodes
 
-**Kind**: global constant
+**Kind**: global constant  
 <a name="ServerErrorCodes"></a>
 
 ## ServerErrorCodes
 The ServerErrorCodes
 
-**Kind**: global constant
+**Kind**: global constant  
