@@ -26,8 +26,6 @@ import ExtendableError from 'es6-error';
 /**
  * Class representing a ClientError
  * @extends ExtendableError
- * @example <caption>Example usage of ClientError</caption>
- * let notFoundError = new ClientError(ClientErrorCodes.NOT_FOUND)
  */
 export class ClientError extends ExtendableError {
 
@@ -35,6 +33,8 @@ export class ClientError extends ExtendableError {
    * Creates a ClientError object
    * @param {ClientErrorCodes} errCode - the client error code
    * @param {string} [extra] - the error reason related information
+   * @example <caption>Example usage of ClientError</caption>
+   * let notFoundError = new ClientError(ClientErrorCodes.NOT_FOUND)
   */
   constructor(errCode, extra = '') {
     super(errCode.message);
@@ -63,6 +63,8 @@ export class ServerError extends ExtendableError {
    * Creates a ServerError object
    * @param {ServerErrorCodes} errCode - the server error code
    * @param {string} [extra] - the reason related information
+   * @example <caption>Example usage of ServerError</caption>
+   * let notFoundError = new ServerError(ServerErrorCodes.DATABSE_ERROR)
   */
   constructor(errCode, extra = '') {
     super(errCode.message);
